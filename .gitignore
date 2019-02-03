@@ -1,0 +1,8 @@
+node_modules/
+.idea/
+package-lock.json
+CHANGELOG.md
+README.md
+__MACOSX/
+documentation/
+e2e/
