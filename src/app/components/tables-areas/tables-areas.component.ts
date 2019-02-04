@@ -63,7 +63,7 @@ export class TablesAreasComponent implements OnInit {
     getTotal1() {
         var total = 0;
         for( var i = 0; i < this.tableData2.dataRows.length; i++ ){
-            var integer = parseInt(this.tableData2.dataRows[i].amount)
+            var integer = parseInt(this.tableData2.dataRows[i].amount);
             total += integer;
         }
         return total;
@@ -71,7 +71,7 @@ export class TablesAreasComponent implements OnInit {
     getTotal2() {
         var total = 0;
         for( var i = 0; i < this.tableData3.dataRows.length; i++ ){
-            var integer = parseInt(this.tableData3.dataRows[i][5])
+            var integer = parseInt(this.tableData3.dataRows[i][5]);
             total += integer;
         }
         return total;

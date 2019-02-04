@@ -8,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ImageUploadComponent implements OnInit {
     @Input() isRound: boolean = false;
     @Input() image: string;
-    state: any = {}
+    state: any = {};
     constructor() {
         this.handleImageChange = this.handleImageChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -30,7 +30,7 @@ export class ImageUploadComponent implements OnInit {
             this.state.file = file;
             this.state.imagePreviewUrl = reader.result;
             // this.state.imagePreviewUrl1 = reader.result;
-        }
+        };
         reader.readAsDataURL(file);
     }
     handleSubmit(e){
